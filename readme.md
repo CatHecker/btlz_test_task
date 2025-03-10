@@ -7,11 +7,14 @@
 Все id таблиц записаны в файле sheet_ids.txt
 
 Для того, чтобы прикрепить новую google sheets таблицу, нужно:
-1) Создать таблицу и дать право редактирования пользователю test-task@caramel-era-435207-r3.iam.gserviceaccount.com
+1) Создать таблицу, назвать лист "stocks_coefs" и дать право редактирования пользователю test-task@caramel-era-435207-r3.iam.gserviceaccount.com или другому пользователю, для которого вы подключили файл
 2) Из ссылки вынести sheet_id, он будет находится между d/ и /edit, пример: https://docs.google.com/spreadsheets/d/{SHEET_ID}/edit?gid=0#gid=0
 3) Прописать команду, вставив sheet_id: `npx tsx ./src/googlesheets/update_key.ts --value {SHEET_ID}`
 
-## Команды:
+
+Для запуска приложения достаточно использовать `docker compose up`
+
+## Прочие команды:
 
 Заменить google таблицу на новую:
 ```bash

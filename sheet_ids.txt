@@ -1,3 +1,5 @@
 Все таблицы можно просмотреть по ссылке https://docs.google.com/spreadsheets/d/{SPREADSHEET_ID}/edit?gid=0#gid=0       
 Где вместо {SPREADSHEET_ID} нужно вставить id из списка:
 1a6m34q-OcSLQOBvr1h4w9HH7LaTfAtnl5Z67rmb9JF4
+1FbgPl65YGed1sjhx3smaDZ31m2tUKwK1cnXyTbaU5xQ
+1n8Z_YOC3tTzfS9vVhcsnC4D_3_zVsoNWdNmaQ-BU1VI

@@ -16,5 +16,6 @@ export async function seed(knex) {
                 boxStorageLiter: null,
             },
         ]);
+        await knex("spreadsheets").where({ warehouseName: "testWarehouse" }).del();
     }
 }

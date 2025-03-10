@@ -5,7 +5,7 @@ import knex from "#postgres/knex.js";
 
 export async function updateGoogleSheet() {
   const auth = new google.auth.GoogleAuth({
-    keyFile: 'credentials2.json',
+    keyFile: 'credentials.json',
     scopes: ['https://www.googleapis.com/auth/spreadsheets'],
   });
 
@@ -15,7 +15,7 @@ export async function updateGoogleSheet() {
   const range = `stocks_coefs!A1:H${countStrings[0].count}`; 
 
   const tariffs = await knex('spreadsheets').orderBy('boxDeliveryAndStorageExpr', 'asc');
-//
+
   const values = tariffs.map(tariff => [
     tariff.warehouseName,
     tariff.boxDeliveryAndStorageExpr,
