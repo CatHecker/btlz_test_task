@@ -4,7 +4,7 @@ import { get_coeffs } from "./api.js";
 import { updateGoogleSheet } from "#googlesheets/update_sheets.js";
 
 export function updateInfoIntoPg() {
-    cron.schedule("* * * * *", async () => {
+    cron.schedule("0 * * * *", async () => {
         let daysAgo = 0
         const tariffs = await get_coeffs(daysAgo);
         try {
